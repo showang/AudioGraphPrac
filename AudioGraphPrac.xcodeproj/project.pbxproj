@@ -12,6 +12,16 @@
 		348F04881F720F19009EDD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F04861F720F19009EDD0E /* Main.storyboard */; };
 		348F048A1F720F19009EDD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348F04891F720F19009EDD0E /* Assets.xcassets */; };
 		348F048D1F720F19009EDD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F048B1F720F19009EDD0E /* LaunchScreen.storyboard */; };
+		348F049C1F720F6C009EDD0E /* PlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F049A1F720F6C009EDD0E /* PlayMusicViewController.m */; };
+		348F049D1F720F6C009EDD0E /* PlayMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 348F049B1F720F6C009EDD0E /* PlayMusicViewController.xib */; };
+		348F04AC1F72116C009EDD0E /* MyAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04A11F72116C009EDD0E /* MyAudioGraph.m */; };
+		348F04AD1F72116C009EDD0E /* MyAudioNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04A31F72116C009EDD0E /* MyAudioNode.m */; };
+		348F04AE1F72116C009EDD0E /* MyAudioNodeEQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04A51F72116C009EDD0E /* MyAudioNodeEQ.m */; };
+		348F04AF1F72116C009EDD0E /* MyAudioNodeMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04A71F72116C009EDD0E /* MyAudioNodeMixer.m */; };
+		348F04B01F72116C009EDD0E /* MyAudioNodeRemoteIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04A91F72116C009EDD0E /* MyAudioNodeRemoteIO.m */; };
+		348F04B11F72116C009EDD0E /* MyAudioParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04AB1F72116C009EDD0E /* MyAudioParser.m */; };
+		348F04B61F721175009EDD0E /* SimpleAudioGraphPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04B31F721175009EDD0E /* SimpleAudioGraphPlayer.m */; };
+		348F04B71F721175009EDD0E /* SimpleAudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F04B51F721175009EDD0E /* SimpleAudioQueuePlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,26 @@
 		348F04891F720F19009EDD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348F048C1F720F19009EDD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348F048E1F720F19009EDD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348F04981F720F6B009EDD0E /* AudioGraphPrac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioGraphPrac-Bridging-Header.h"; sourceTree = "<group>"; };
+		348F04991F720F6C009EDD0E /* PlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayMusicViewController.h; sourceTree = "<group>"; };
+		348F049A1F720F6C009EDD0E /* PlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayMusicViewController.m; sourceTree = "<group>"; };
+		348F049B1F720F6C009EDD0E /* PlayMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayMusicViewController.xib; sourceTree = "<group>"; };
+		348F04A01F72116C009EDD0E /* MyAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioGraph.h; path = audio/MyAudioGraph.h; sourceTree = "<group>"; };
+		348F04A11F72116C009EDD0E /* MyAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioGraph.m; path = audio/MyAudioGraph.m; sourceTree = "<group>"; };
+		348F04A21F72116C009EDD0E /* MyAudioNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioNode.h; path = audio/MyAudioNode.h; sourceTree = "<group>"; };
+		348F04A31F72116C009EDD0E /* MyAudioNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioNode.m; path = audio/MyAudioNode.m; sourceTree = "<group>"; };
+		348F04A41F72116C009EDD0E /* MyAudioNodeEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioNodeEQ.h; path = audio/MyAudioNodeEQ.h; sourceTree = "<group>"; };
+		348F04A51F72116C009EDD0E /* MyAudioNodeEQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioNodeEQ.m; path = audio/MyAudioNodeEQ.m; sourceTree = "<group>"; };
+		348F04A61F72116C009EDD0E /* MyAudioNodeMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioNodeMixer.h; path = audio/MyAudioNodeMixer.h; sourceTree = "<group>"; };
+		348F04A71F72116C009EDD0E /* MyAudioNodeMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioNodeMixer.m; path = audio/MyAudioNodeMixer.m; sourceTree = "<group>"; };
+		348F04A81F72116C009EDD0E /* MyAudioNodeRemoteIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioNodeRemoteIO.h; path = audio/MyAudioNodeRemoteIO.h; sourceTree = "<group>"; };
+		348F04A91F72116C009EDD0E /* MyAudioNodeRemoteIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioNodeRemoteIO.m; path = audio/MyAudioNodeRemoteIO.m; sourceTree = "<group>"; };
+		348F04AA1F72116C009EDD0E /* MyAudioParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioParser.h; path = audio/MyAudioParser.h; sourceTree = "<group>"; };
+		348F04AB1F72116C009EDD0E /* MyAudioParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAudioParser.m; path = audio/MyAudioParser.m; sourceTree = "<group>"; };
+		348F04B21F721175009EDD0E /* SimpleAudioGraphPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAudioGraphPlayer.h; path = player/SimpleAudioGraphPlayer.h; sourceTree = "<group>"; };
+		348F04B31F721175009EDD0E /* SimpleAudioGraphPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAudioGraphPlayer.m; path = player/SimpleAudioGraphPlayer.m; sourceTree = "<group>"; };
+		348F04B41F721175009EDD0E /* SimpleAudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAudioQueuePlayer.h; path = player/SimpleAudioQueuePlayer.h; sourceTree = "<group>"; };
+		348F04B51F721175009EDD0E /* SimpleAudioQueuePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAudioQueuePlayer.m; path = player/SimpleAudioQueuePlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +84,50 @@
 		348F04811F720F19009EDD0E /* AudioGraphPrac */ = {
 			isa = PBXGroup;
 			children = (
+				348F049F1F72115C009EDD0E /* audio */,
+				348F049E1F72114F009EDD0E /* player */,
 				348F04821F720F19009EDD0E /* AppDelegate.swift */,
+				348F04991F720F6C009EDD0E /* PlayMusicViewController.h */,
+				348F049A1F720F6C009EDD0E /* PlayMusicViewController.m */,
+				348F049B1F720F6C009EDD0E /* PlayMusicViewController.xib */,
 				348F04841F720F19009EDD0E /* ViewController.swift */,
 				348F04861F720F19009EDD0E /* Main.storyboard */,
 				348F04891F720F19009EDD0E /* Assets.xcassets */,
 				348F048B1F720F19009EDD0E /* LaunchScreen.storyboard */,
 				348F048E1F720F19009EDD0E /* Info.plist */,
+				348F04981F720F6B009EDD0E /* AudioGraphPrac-Bridging-Header.h */,
 			);
 			path = AudioGraphPrac;
+			sourceTree = "<group>";
+		};
+		348F049E1F72114F009EDD0E /* player */ = {
+			isa = PBXGroup;
+			children = (
+				348F04B21F721175009EDD0E /* SimpleAudioGraphPlayer.h */,
+				348F04B31F721175009EDD0E /* SimpleAudioGraphPlayer.m */,
+				348F04B41F721175009EDD0E /* SimpleAudioQueuePlayer.h */,
+				348F04B51F721175009EDD0E /* SimpleAudioQueuePlayer.m */,
+			);
+			name = player;
+			sourceTree = "<group>";
+		};
+		348F049F1F72115C009EDD0E /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				348F04A01F72116C009EDD0E /* MyAudioGraph.h */,
+				348F04A11F72116C009EDD0E /* MyAudioGraph.m */,
+				348F04A21F72116C009EDD0E /* MyAudioNode.h */,
+				348F04A31F72116C009EDD0E /* MyAudioNode.m */,
+				348F04A41F72116C009EDD0E /* MyAudioNodeEQ.h */,
+				348F04A51F72116C009EDD0E /* MyAudioNodeEQ.m */,
+				348F04A61F72116C009EDD0E /* MyAudioNodeMixer.h */,
+				348F04A71F72116C009EDD0E /* MyAudioNodeMixer.m */,
+				348F04A81F72116C009EDD0E /* MyAudioNodeRemoteIO.h */,
+				348F04A91F72116C009EDD0E /* MyAudioNodeRemoteIO.m */,
+				348F04AA1F72116C009EDD0E /* MyAudioParser.h */,
+				348F04AB1F72116C009EDD0E /* MyAudioParser.m */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +163,7 @@
 					348F047E1F720F19009EDD0E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = GA2DMW4FFR;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348F049D1F720F6C009EDD0E /* PlayMusicViewController.xib in Resources */,
 				348F048D1F720F19009EDD0E /* LaunchScreen.storyboard in Resources */,
 				348F048A1F720F19009EDD0E /* Assets.xcassets in Resources */,
 				348F04881F720F19009EDD0E /* Main.storyboard in Resources */,
@@ -137,8 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348F04AF1F72116C009EDD0E /* MyAudioNodeMixer.m in Sources */,
 				348F04851F720F19009EDD0E /* ViewController.swift in Sources */,
+				348F04B01F72116C009EDD0E /* MyAudioNodeRemoteIO.m in Sources */,
+				348F049C1F720F6C009EDD0E /* PlayMusicViewController.m in Sources */,
+				348F04AE1F72116C009EDD0E /* MyAudioNodeEQ.m in Sources */,
+				348F04B11F72116C009EDD0E /* MyAudioParser.m in Sources */,
+				348F04B61F721175009EDD0E /* SimpleAudioGraphPlayer.m in Sources */,
+				348F04B71F721175009EDD0E /* SimpleAudioQueuePlayer.m in Sources */,
+				348F04AD1F72116C009EDD0E /* MyAudioNode.m in Sources */,
 				348F04831F720F19009EDD0E /* AppDelegate.swift in Sources */,
+				348F04AC1F72116C009EDD0E /* MyAudioGraph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +340,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GA2DMW4FFR;
 				INFOPLIST_FILE = AudioGraphPrac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.william.AudioGraphPrac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioGraphPrac/AudioGraphPrac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GA2DMW4FFR;
 				INFOPLIST_FILE = AudioGraphPrac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.william.AudioGraphPrac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioGraphPrac/AudioGraphPrac-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

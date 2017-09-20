@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayMusicViewController">
+            <connections>
+                <outlet property="loadingIndicator" destination="udp-BQ-XNH" id="Lqx-AI-SBa"/>
+                <outlet property="playButton" destination="DrW-OW-hdX" id="97g-70-PsT"/>
+                <outlet property="playIconButton" destination="cTg-ac-yGF" id="cun-Yy-sC4"/>
+                <outlet property="stopButton" destination="uZj-Qi-OrQ" id="l5y-wZ-qf9"/>
+                <outlet property="urlTextField" destination="Abv-1h-ToG" id="OCe-3m-thf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wCn-zb-CuL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-OW-hdX">
+                    <rect key="frame" x="32" y="306" width="311" height="56"/>
+                    <color key="backgroundColor" red="0.6413969424" green="0.43700561129999999" blue="0.65738341970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Dd1-rS-E6T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="playMusic:" destination="-1" eventType="touchUpInside" id="dxY-5V-q5H"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mp3 url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Abv-1h-ToG">
+                    <rect key="frame" x="32" y="222" width="311" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="NKM-BF-R9S"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTg-ac-yGF">
+                    <rect key="frame" x="159" y="378" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="4e9-v4-EIM"/>
+                        <constraint firstAttribute="width" constant="56" id="ASk-vB-9wf"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="playMusic:" destination="-1" eventType="touchUpInside" id="gqV-iT-bjH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Qi-OrQ">
+                    <rect key="frame" x="247" y="378" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="co7-RH-TZh"/>
+                        <constraint firstAttribute="width" constant="56" id="fgi-Fg-ftW"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="stopMusic:" destination="-1" eventType="touchUpInside" id="Oly-Xn-Jfn"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="udp-BQ-XNH">
+                    <rect key="frame" x="159" y="450" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="KY1-rS-CJy"/>
+                        <constraint firstAttribute="width" constant="56" id="tfO-L8-N28"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DrW-OW-hdX" firstAttribute="top" secondItem="Abv-1h-ToG" secondAttribute="bottom" constant="32" id="33h-3q-yRU"/>
+                <constraint firstItem="DrW-OW-hdX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="8Y8-ZS-Lpc"/>
+                <constraint firstItem="Abv-1h-ToG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="Cls-wu-4FN"/>
+                <constraint firstItem="cTg-ac-yGF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HlH-l5-Ak1"/>
+                <constraint firstItem="udp-BQ-XNH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HwI-72-2Pw"/>
+                <constraint firstAttribute="trailing" secondItem="DrW-OW-hdX" secondAttribute="trailing" constant="32" id="JXF-4W-8ch"/>
+                <constraint firstItem="udp-BQ-XNH" firstAttribute="top" secondItem="cTg-ac-yGF" secondAttribute="bottom" constant="16" id="Pwf-IR-HDE"/>
+                <constraint firstAttribute="trailing" secondItem="Abv-1h-ToG" secondAttribute="trailing" constant="32" id="QAR-ix-RoW"/>
+                <constraint firstItem="cTg-ac-yGF" firstAttribute="top" secondItem="DrW-OW-hdX" secondAttribute="bottom" constant="16" id="Rdl-De-a4i"/>
+                <constraint firstItem="uZj-Qi-OrQ" firstAttribute="top" secondItem="DrW-OW-hdX" secondAttribute="bottom" constant="16" id="fGb-gP-d6U"/>
+                <constraint firstItem="uZj-Qi-OrQ" firstAttribute="leading" secondItem="udp-BQ-XNH" secondAttribute="trailing" constant="32" id="iDd-Ua-tlh"/>
+                <constraint firstItem="DrW-OW-hdX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="w3a-fv-wyv"/>
+            </constraints>
+            <point key="canvasLocation" x="-205" y="41"/>
+        </view>
+    </objects>
+</document>
